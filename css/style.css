@@ -1,0 +1,44 @@
+body {
+  font-family: "Montserrat", "sans-serif";
+}
+.jumbotron {
+  position: relative;
+  padding-top: 5%;
+  padding-bottom: 0;
+  margin-bottom: -1px;
+  width: 100%;
+  text-align: center;
+  height: 400px;
+  background-color: #1d68d8fd;
+  /* background-image: url(/asset/gunung1.jpg); */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.service-style {
+  margin-top: 15px;
+  background-color: #fff;
+}
+
+.fom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #000;
+}
+.input {
+  width: 35%;
+  margin: 10px 0;
+}
+.gjwf {
+  margin-left: 10px;
+}
+.option {
+  font-family: "Fraunces";
+  margin: 0 0;
+  width: 100%;
+  /* background-color: #000; */
+}
+.green {
+  color: green;
+}
