@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="/css/style.css" type="text/css" />
     <title>Landing Page Bootstrap</title>
   </head>
-  <body>
+  <body class="">
     <!-- start navigasi -->
     <nav class="navbar navbar-expand-lg navbar-light bg-primary">
       <div class="container">
@@ -26,7 +26,7 @@
               <a class="nav-link" href="#">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#service">Service</a>
+              <a class="nav-link service" id="slideService" href="#service">Service</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#product">Product</a>
@@ -42,9 +42,9 @@
     <!-- start header -->
     <header class="jumbotron jumbotron-fluid">
       <div class="overlay">
-        <h5 class="display-4 text-light">Selamat Datang Di Boss Gamers</h5>
+        <h5 class="display-4 text-light">Hallo Boss</h5>
         <p class="lead text-light px-2">Website Panel Top Up & Pulsa & Tagihan Listrik Paling Murah SeGalaxy Bima Sakti</p>
-        <p><a href="#" class="btn btn-success" role="button">Jadi Member!</a><a href="#" class="btn btn-secondary ml-4" role="button">Pelajari dulu</a></p>
+        <p><a href="#" class="btn btn-success" role="button">Jadi Member!</a><a href="#transaksi" class="btn btn-secondary ml-4" role="button">Transaksi</a></p>
       </div>
     </header>
     <form action="#" class="d-flex fom">
@@ -59,6 +59,7 @@
           <p class="lead mb-4">Semua orang sekarang mempunyai smartphone dan ketika anda bergabung akan mendapatkan keuntungan dan juga menghemat penggunanaan sendiri.Anda akan mendapatkan harga termurah di seluruh dunia hanya disini !</p>
         </div>
         <div class="col-12 col-sm-6 col-lg-3">
+          <!--untuk menambah ukuran lingkaran parent 2X lipat-->
           <span class="fa-stack fa-2x mb-2">
             <i class="fas fa-circle fa-stack-2x green"></i>
             <i class="fa-sharp fa-solid fa-bolt fa-stack-1x text-white"></i>
@@ -86,7 +87,7 @@
         <div class="col-12 mt-2">
           <p><a href="#" class="btn btn-success btn-lg" role="button">Service Lainya!</a></p>
         </div>
-        <div class="col-12 option">
+        <div class="col-12 option" id="transaksi">
           <h2>Silahkan Pilih Transaksi</h2>
           <div class="option">
             <a href="#langsung" class="btn btn-outline-primary text-dark my-1" role="button">TOP UP LANGSUNG</a>
@@ -100,54 +101,61 @@
       </div>
     </section>
     <!-- start product -->
+    <!-- topup langsung -->
     <section id="product" class="container-fluid">
       <h3 class="dislay-5" id="#langsung">TopUp Langsung</h3>
-      <div class="row text-center justify-content-center my-2">
+      <div class="row text-center justify-content-center my-2 ml-2">
         <div class="col-6 col-sm-3 col-lg-2">
           <div class="card" style="width: 10rem">
             <img src="asset/Product/freefire.jpg" alt="ff" class="card-img-top" />
+            <p class="title">Free Fire</p>
             <div class="card-body button">
-              <a href="#" class="btn btn-primary">Free Fire</a>
+              <a href="#" class="btn btn-primary">Beli</a>
             </div>
           </div>
         </div>
         <div class="col-6 col-sm-3 col-lg-2">
           <div class="card" style="width: 10rem">
             <img src="asset/Product/pubg.jpg" alt="pubg" class="card-img-top" />
+            <p class="title">PUBG</p>
             <div class="card-body button">
-              <a href="#" class="btn btn-primary">PUBG</a>
+              <a href="#" class="btn btn-primary">Beli</a>
             </div>
           </div>
         </div>
         <div class="col-6 col-sm-3 col-lg-2">
           <div class="card" style="width: 10rem">
             <img src="asset/Product/ml.jpg" alt="ml" class="card-img-top" />
+            <p class="title">Mobile Legends</p>
             <div class="card-body button">
-              <a href="#" class="btn btn-primary">ML</a>
+              <a href="#" class="btn btn-primary">Beli</a>
             </div>
           </div>
         </div>
         <div class="col-6 col-sm-3 col-lg-2">
           <div class="card" style="width: 10rem">
             <img src="asset/Product/pubg.jpg" alt="pubg" class="card-img-top" />
+            <p class="title">PUBG</p>
             <div class="card-body button">
-              <a href="#" class="btn btn-primary">PUBG</a>
+              <a href="#" class="btn btn-primary">Beli</a>
             </div>
           </div>
         </div>
         <div class="col-6 col-sm-3 col-lg-2">
           <div class="card" style="width: 10rem">
             <img src="asset/Product/ml.jpg" alt="ml" class="card-img-top" />
+            <p class="title">Mobale Legends</p>
             <div class="card-body button">
-              <a href="#" class="btn btn-primary">ML</a>
+              <a href="#" class="btn btn-primary">Beli</a>
             </div>
           </div>
         </div>
         <div class="col-6 col-sm-3 col-lg-2">
           <div class="card" id="langsung" style="width: 10rem">
             <img src="asset/Product/freefire.jpg" alt="ff" class="card-img-top" />
+            <p class="title">Free Fire</p>
             <div class="card-body button">
-              <a href="#" class="btn btn-primary">Free Fire</a>
+              <a href="#" class="btn btn-primary">Beli</a>
             </div>
           </div>
         </div>
@@ -155,29 +163,41 @@
       <!-- end langsung -->
       <!-- start entertaiment -->
       <div class="container-fluid">
-        <h3 class="display-5" id="#entertaiment">Entertaiment</h3>
-        <div class="row justify-content-start text-center my-2">
+        <h3 class="display-5" id="#entertaimen">Entertaiment</h3>
+        <div class="row justify-content-center text-center my-2">
           <div class="col-6 col-sm-3 col-lg-2">
             <div class="card" style="width: 10rem">
               <img src="asset/Product/netflix.jpg" alt="fnetflix" class="card-img-top" />
+              <p class="title">Netflix</p>
               <div class="card-body button">
-                <a href="#" class="btn btn-primary">Netflix</a>
+                <a href="#" class="btn btn-primary">Beli</a>
               </div>
             </div>
           </div>
           <div class="col-6 col-sm-3 col-lg-2">
             <div class="card" style="width: 10rem">
               <img src="asset/Product/Sportify.jpg" alt="sportify" class="card-img-top" />
+              <p class="title">Sportify</p>
               <div class="card-body button">
-                <a href="#" class="btn btn-primary">Sportify</a>
+                <a href="#" class="btn btn-primary">Beli</a>
               </div>
             </div>
           </div>
           <div class="col-6 col-sm-3 col-lg-2">
             <div class="card" style="width: 10rem">
               <img src="asset/Product/Bigo.jpg" alt="bigo" class="card-img-top" />
+              <p class="title">Bigo Live</p>
               <div class="card-body button">
-                <a href="#" class="btn btn-primary">Bigo </a>
+                <a href="#" class="btn btn-primary">Beli</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-sm-3 col-lg-2">
+            <div class="card" style="width: 10rem">
+              <img src="asset/Product/netflix.jpg" alt="fnetflix" class="card-img-top" />
+              <p class="title">Netflix</p>
+              <div class="card-body button">
+                <a href="#" class="btn btn-primary">Beli</a>
               </div>
             </div>
           </div>
@@ -191,5 +211,7 @@
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/37bfdaaf68.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <script src="/js/apps.js"></script>
   </body>
 </html>
